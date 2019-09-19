@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./file.js"></script>
+    <script>
+      // $(document).ready(function(){
+      //         console.log($("body").load("file:///D:/Users/mehdi.echchelh/Documents/1_RD/R&D.txt"));
+      // });
+      // $.get("file:///D:/Users/mehdi.echchelh/Documents/1_RD/R&D.txt", function(data) {
+      //    alert(data);
+      //    //process text file line by line
+      //    $('div').html(data.replace('n',''));
+      // });
+      // console.log("a");
+      // $('#div').load("test.txt");
+
+      // Get Log content
+      var log = log_content();
+
+      // Find all occurences of error
+      var index = getIndicesOf("ERROR:", log);
+
+
+
+      // Display the whole file
+      $(document).ready(function(){
+        $('div').html(log);
+      });
+
+    </script>
+  </head>
+  <body>
+    <h1>Log analysis</h1>
+    <div style="border: 1px solid #ccc; border-radius: 5px; padding:5px">
+
+    </div>
+  </body>
+
+</html>
