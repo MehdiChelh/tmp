@@ -1,0 +1,22 @@
+Fonctionnalités
+	- Lockedin
+		- Roll-forward
+
+Test que les contrôles sont ok.
+	- Lockedin
+		- Contrôle que tous les contrats sont bien repris pour la pondération (weight table).
+			- Sinon donne le taux de contrats non inclus.
+		- Contrôle que tous les GOC ont bien une pondération et une courbe
+		- 
+Visualisation
+	- Interpolation
+	
+Backup des fichiers du dossier
+	- Jokapp
+		{Joker Joker_reass Jokorresp Jokorresp_reass}_%name_extension()
+	- Lockedin
+		- Message d'alerte VBA si 
+			- le dossier d'output n'existe pas
+			- le dossier d'output n'est pas vide 
+			- le dossier d'output contient déjà HISTO_WEIGHT, ...
+		- Message d'alerte par rapport à la mise à jour d'histo_weight / Avoir des chemins de fichiers bien normés
