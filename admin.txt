@@ -7,13 +7,24 @@ Test que les contrôles sont ok.
 		- Contrôle que tous les contrats sont bien repris pour la pondération (weight table).
 			- Sinon donne le taux de contrats non inclus.
 		- Contrôle que tous les GOC ont bien une pondération et une courbe
-		- 
+		- Contrôle la cohérence avec le précédent HISTO_WEIGHTS
+
 Visualisation
 	- Interpolation
 	
 Backup des fichiers du dossier
 	- Jokapp
 		{Joker Joker_reass Jokorresp Jokorresp_reass}_%name_extension()
+		- Au lancement du run :
+			- Création du dossier de backup yyyy_mm_dd - hh_ss
+			- Création des sous-dossiers "initial" et "final"
+			- Copie des fichiers initiaux dans initial
+			- Copie des fichiers finaux dans final
+			- Lien backup - hist		
+				- Dans hist faire un fichier dans lequel on fait le lien entre date d'arrêté et id de backup
+				- Dans "backup/yyyy_mm_dd - hh_ss" stocker la date d'arrêté
+				- Dans "backup/yyyy_mm_dd - hh_ss" mettre la liste des paramètres utilisés
+					
 	- Lockedin
 		- Message d'alerte VBA si 
 			- le dossier d'output n'existe pas
